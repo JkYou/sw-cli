@@ -1,0 +1,37 @@
+{
+  "name": "sw-cli_swy",
+  "version": "1.0.2",
+  "description": "a activity cli for swy",
+  "bin": {
+    "swy": "bin/swy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JkYou/sw-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "sw"
+  ],
+  "author": "jk.you",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JkYou/sw-cli/issues"
+  },
+  "homepage": "https://github.com/JkYou/sw-cli#readme",
+  "dependencies": {
+    "commander": "^3.0.1",
+    "async": "^2.6.1",
+    "chalk": "^2.4.1",
+    "consolidate": "^0.15.1",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "metalsmith": "^2.3.0",
+    "ora": "^3.0.0",
+    "request": "^2.87.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0",
+    "user-home": "^2.0.0"
+  }
+}
