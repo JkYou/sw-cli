@@ -14,12 +14,12 @@ module.exports=(tmpPath)=>{
   inquirer.prompt([{
     type:'input',
     name:'name',
-    message:'The name of project',
+    message:'项目名称？',
     default:'swy-fe'
   },{
     type:'input',
     name:'destination',
-    message:'The destination of project',
+    message:'下载地址？',
     default:process.cwd()
   }]).then(answer=>{
     //项目生成路径

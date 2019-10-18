@@ -1,7 +1,6 @@
 const request=require('request')
 const ora=require('ora')
 const chalk=require('chalk')
-
 module.exports=(callback)=>{
   const spinner = ora('fetching template list...')
   spinner.start()

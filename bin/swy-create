@@ -32,7 +32,7 @@ function Main(){
       type:'list',
       name:'template',
       choices,
-      message:'Choose template you want'
+      message:'选择你需要的模板'
     }]).then(answer=>{
       //模板名称
       const tmpName=answer.template
@@ -44,7 +44,7 @@ function Main(){
           {
             type:'confirm',
             name:'override',
-            message:'The template exists.Override?'
+            message:'本地已经存在，是否覆盖?'
           }
         ]).then(answer=>{
           if(answer.override) {
@@ -68,12 +68,12 @@ function Main(){
  * @param {String} tmpUrl 
  */
 function downloadAndGenerate(tmpRepo,tmpName,tmpUrl){
-  const spinner=ora('downloading template...')
+  const spinner=ora('✨ downloading template...')
   const tmpDest=path.join(tmpRepo,tmpName)
   inquirer.prompt([{
     type:'input',
     name:'branch',
-    message:`the name of branch you need in ${tmpName}`,
+    message:`请输入 ${tmpName} 项目的分支？`,
     default:'master'
   }]).then(answer=>{
     spinner.start()
@@ -81,10 +81,10 @@ function downloadAndGenerate(tmpRepo,tmpName,tmpUrl){
       clone:false
     },(err)=>{
       if(err){
-        spinner.fail(chalk.red('download template unsuccessfully'))
+        spinner.fail(chalk.red('⚙  download template unsuccessfully'))
         console.log(err)
       }else{
-        spinner.succeed(chalk.green('download template successfully'))
+        spinner.succeed(chalk.green('🚀 download template successfully'))
         generate(tmpDest)
       }
     })
