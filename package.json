@@ -2,23 +2,7 @@
   "name": "swy-cli",
   "version": "1.0.4",
   "description": "a activity cli for swy",
-  "bin": {
-    "swy": "bin/swy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JkYou/sw-cli.git"
-  },
-  "keywords": [
-    "cli",
-    "sw"
-  ],
   "author": "jk.you",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JkYou/sw-cli/issues"
-  },
-  "homepage": "https://github.com/JkYou/sw-cli#readme",
   "dependencies": {
     "@vue/cli": "^3.12.0",
     "async": "^2.6.1",
@@ -30,12 +14,27 @@
     "inquirer": "^6.0.0",
     "metalsmith": "^2.3.0",
     "ora": "^3.0.0",
+    "register-service-worker": "^1.6.2",
     "request": "^2.87.0",
     "rimraf": "^2.6.2",
     "semver": "^5.5.0",
     "user-home": "^2.0.0"
   },
-  "devDependencies": {
-    "vue-cli-plugin-mock": "0.0.10"
+  
+  "bin": {
+    "swy": "bin/swy"
+  },
+  "bugs": {
+    "url": "https://github.com/JkYou/sw-cli/issues"
+  },
+  "homepage": "https://github.com/JkYou/sw-cli#readme",
+  "keywords": [
+    "cli",
+    "sw"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JkYou/sw-cli.git"
   }
 }
